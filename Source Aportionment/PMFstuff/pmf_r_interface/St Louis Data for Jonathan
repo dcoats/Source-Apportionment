@@ -1,0 +1,8 @@
+lams <- as.matrix(read.table("lam9PMFout.txt"))
+facs <- as.matrix(read.table("fac9PMFout.txt"))
+
+conc <- as.matrix(read.table("sldat2.txt"))
+unc <- read.table("slunc2.txt")
+
+plot(c(conc), c(facs %*% t(lams)))
+

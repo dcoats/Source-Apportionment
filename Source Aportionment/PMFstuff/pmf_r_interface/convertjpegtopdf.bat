@@ -1,0 +1,19 @@
+convert gkey61.jpg gkey61.pdf
+convert gkey62.jpg gkey62.pdf
+convert gkey63.jpg gkey63.pdf
+convert gkey64.jpg gkey64.pdf
+convert gkey65.jpg gkey65.pdf
+convert gkey66.jpg gkey66.pdf
+convert gkeyf61.jpg gkeyf61.pdf
+convert gkeyf62.jpg gkeyf62.pdf
+convert gkeyf63.jpg gkeyf63.pdf
+convert gkeyf64.jpg gkeyf64.pdf
+convert gkeyf65.jpg gkeyf65.pdf
+convert gkeyf66.jpg gkeyf66.pdf
+convert gkeyw61.jpg gkeyw61.pdf
+convert gkeyw62.jpg gkeyw62.pdf
+convert gkeyw63.jpg gkeyw63.pdf
+convert gkeyw64.jpg gkeyw64.pdf
+convert gkeyw65.jpg gkeyw65.pdf
+convert gkeyw66.jpg gkeyw66.pdf
+

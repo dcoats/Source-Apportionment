@@ -1,0 +1,47 @@
+
+model
+{
+
+for(p in 1:93)
+{
+for(t in 1:days)
+{
+for(k in 1:profiles)
+{
+arr[p,t,k]<-lambda[p,k,t]*f[k,t]
+}
+}
+}
+
+for(p in 1:93)
+{
+for(t in 1:days)
+{
+multiplied[p,t]<-sum(arr[p,t,])
+mu[p,t]<-log(multiplied[p,t])-.5*vari
+logy[p,t] ~ dnorm(mu[p,t],prec)
+}
+}
+for(t in 1:days)
+{
+for(p in 1:93)
+{
+for(k in 1:profiles)
+{
+lambda[p,k,t]~dgamma(alpha[p,k,t],beta[p,k,t])
+}
+}
+}
+
+for(k in 1:profiles)    
+{
+for(t in 1:days)  
+{
+f[k,t]~dgamma(2.5,.41666)    
+}
+}
+vari<-log(((cv*cv)+1))
+prec<-1/vari
+
+
+}

@@ -1,0 +1,9 @@
+LeadSmelter
+Fireworks
+CopperSmelter
+SummerSecondary
+ZincSmelter
+Soil
+SteelMill
+WinterSecondary
+Mobile

@@ -1,0 +1,32 @@
+elements <- read.table(file="F:/EPA/Weightedrose/elements/sldat2.txt")
+wind <- read.table(file="F:/EPA/Weightedrose/src3.txt")[,1:2]
+dat<-cbind(wind,elements)
+names(dat)<-c("date","winddir",
+		"Na","Mg","Al","Si","Ph",
+		"S","Cl","K","Ca","Ti",
+		"V","Cr","Mn","Fe","Co",
+		"Ni","Cu","Zn","Ga","As",
+		"Se","Br","Rb","Sr","Y",
+		"Zr","Mo","Pd","Ag","Cd",
+		"In","Sn","Sb","Ba",
+		"La","Au","Hg","Tl","Pb",
+		"U","OC","EC","SO","NO")
+specnames<-c("Na","Mg","Al","Si","Ph",
+		"S","Cl","K","Ca","Ti",
+		"V","Cr","Mn","Fe","Co",
+		"Ni","Cu","Zn","Ga","As",
+		"Se","Br","Rb","Sr","Y",
+		"Zr","Mo","Pd","Ag","Cd",
+		"In","Sn","Sb","Ba",
+		"La","Au","Hg","Tl","Pb",
+		"U","OC","EC","SO","NO")
+attach(dat)
+par(mar=c(.5,1,3.5,1),mfrow=c(2,2))
+i<-14
+wind<-winddir
+species<-dat[,i+2]
+nsector<-8
+upper<-.25
+main<-specnames[i]
+measurename<-"wtsum"
+radius<-.6
